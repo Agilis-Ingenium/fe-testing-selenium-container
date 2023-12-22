@@ -24,19 +24,13 @@ import java.util.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-
-
 public class AddFoodItemTest {
   private WebDriver driver;
   private Map<String, Object> vars;
   JavascriptExecutor js;
   @Before
   public void setUp() {
-    //System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
-    //driver = new ChromeDriver();
 
-    //System.setProperty("webdriver.gecko.driver", "src/test/resources/geckodriver.exe");
-    //
     WebDriverManager.firefoxdriver().setup();
     driver = new FirefoxDriver();
 
