@@ -22,4 +22,4 @@ jobs:
           context: .
           file: .docker/Dockerfile
           push: true
-          tags: wazby/fe-testing-selenium-container:latest
+          tags: wazby/nubadoo:selenium-container
