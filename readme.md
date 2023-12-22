@@ -1,34 +1,34 @@
-## Welcome to Selenium Cucumber Test Suite
+# Front End Testing Solution
 
-This repo include one demo step and related github actions to take test image and push it docker hub. 
+## Selenium Container
 
-Test application repo can be found [here](https://github.com/selcuktemizsoy/demo-react-app)
+This repo contains:
+- Code for a Selenium Java App that can test the functionality of the front end of the Nubadoo Health Track Web App.
+- It also contains code to Dockerise this app.
+- And Github Actions that will push the container image to Docker Hub.
 
 ### Tool stack
 * Java 8+
 * Maven
 * JUnit
 * Selenium
-* Cucumber
 * Github actions
 * Docker
 
 ### Run
 * To install maven dependencies
 
-`mvn install`
+```
+mvn install
+```
 
 * Run test 
 
-First adjust .env.local file based on your needs. Or use any other .env file
+```
+mvn test
+```
 
-Run this command 
+### Extend
+To add additional tests use the Selenium IDE to generate Java test files.
+Then drop the test files generated in the folder **src/test/java/tests**
 
-`env $(cat .env.local) mvn test`
-
-### TODO
-* Thread driver/additional driver
-* Reporting
-* Screenshot support
-* Notifications 
-* Better readme :)
