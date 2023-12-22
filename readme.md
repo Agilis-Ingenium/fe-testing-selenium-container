@@ -3,9 +3,9 @@
 ## Selenium Container
 
 This repo contains:
-- Code for a Selenium Java App that can test the functionality of the front end of the Nubadoo Health Track Web App.
-- It also contains code to Dockerise this app.
-- And Github Actions that will push the container image to Docker Hub.
+- Code for a Selenium Java App that can test the functionality of the front end of the Nubadoo Health Track Web App. **src/test**
+- It also contains code to Dockerise this app. **.docker/Dockerfile**
+- And Github Actions that will push the container image to Docker Hub. **.github/workflows/github-actions.yaml**
 
 ### Tool stack
 * Java 8+
