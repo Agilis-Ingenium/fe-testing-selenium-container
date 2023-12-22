@@ -29,6 +29,7 @@ mvn test
 ```
 
 ### Extend
-To add additional tests use the Selenium IDE to generate Java test files.
-Then drop the test files generated in the folder **src/test/java/tests**
+
+- To add additional tests use the Selenium IDE to record test and generate Java test files (https://www.selenium.dev/selenium-ide/)
+- Then drop the test files generated in the folder **src/test/java/tests**
 
