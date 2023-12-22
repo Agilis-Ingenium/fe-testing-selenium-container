@@ -46,24 +46,24 @@ public class AddFoodItemTest {
   }
   @Test
   public void addFoodItem() {
-    driver.get("https://www.google.com");
-    //driver.findElement(By.cssSelector("a:nth-child(4) .ml-3")).click();
-    //driver.findElement(By.cssSelector(".bg-green-600")).click();
-    //driver.findElement(By.id("name")).click();
-    //driver.findElement(By.id("name")).sendKeys("TestFoodItem");
-    //driver.findElement(By.id("calories")).click();
-    //driver.findElement(By.id("calories")).sendKeys("12");
-    //driver.findElement(By.id("carbohydrates")).click();
-    //driver.findElement(By.id("carbohydrates")).sendKeys("12");
-    //driver.findElement(By.id("proteinsd")).click();
-    //driver.findElement(By.id("proteinsd")).sendKeys("12");
-    //driver.findElement(By.id("fats")).click();
-    //driver.findElement(By.id("fats")).sendKeys("12");
-    //driver.findElement(By.id("vitamins")).click();
-    //driver.findElement(By.id("vitamins")).sendKeys("Vit C");
-    //driver.findElement(By.id("minerals")).click();
-    //driver.findElement(By.id("minerals")).sendKeys("NaCl");
-    //driver.findElement(By.cssSelector(".hover\\3A bg-green-500")).click();
-    //driver.findElement(By.cssSelector(".text-blue-800")).click();
+    driver.get("http://localhost:5173");
+    driver.findElement(By.cssSelector("a:nth-child(4) .ml-3")).click();
+    driver.findElement(By.cssSelector(".bg-green-600")).click();
+    driver.findElement(By.id("name")).click();
+    driver.findElement(By.id("name")).sendKeys("TestFoodItem");
+    driver.findElement(By.id("calories")).click();
+    driver.findElement(By.id("calories")).sendKeys("12");
+    driver.findElement(By.id("carbohydrates")).click();
+    driver.findElement(By.id("carbohydrates")).sendKeys("12");
+    driver.findElement(By.id("proteinsd")).click();
+    driver.findElement(By.id("proteinsd")).sendKeys("12");
+    driver.findElement(By.id("fats")).click();
+    driver.findElement(By.id("fats")).sendKeys("12");
+    driver.findElement(By.id("vitamins")).click();
+    driver.findElement(By.id("vitamins")).sendKeys("Vit C");
+    driver.findElement(By.id("minerals")).click();
+    driver.findElement(By.id("minerals")).sendKeys("NaCl");
+    driver.findElement(By.cssSelector(".hover\\3A bg-green-500")).click();
+    driver.findElement(By.cssSelector(".text-blue-800")).click();
   }
 }
