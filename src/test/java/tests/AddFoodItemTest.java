@@ -23,6 +23,7 @@ import org.openqa.selenium.Keys;
 import java.util.*;
 import java.net.MalformedURLException;
 import java.net.URL;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class AddFoodItemTest {
   private WebDriver driver;
@@ -32,7 +33,9 @@ public class AddFoodItemTest {
   public void setUp() {
 
     WebDriverManager.firefoxdriver().setup();
-    driver = new FirefoxDriver();
+    FirefoxOptions options=new FirefoxOptions();
+    options.addArguments("--headless");
+    driver = new FirefoxDriver(options);
 
     js = (JavascriptExecutor) driver;
     vars = new HashMap<String, Object>();
