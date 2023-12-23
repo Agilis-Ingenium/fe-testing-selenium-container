@@ -2,4 +2,8 @@
 FROM markhobson/maven-firefox
 
 WORKDIR /tests
-ENTRYPOINT [ "mvn", "install" ]
+COPY ../pom.xml .
+#RUN mvn install
+#COPY .. .
+#ENTRYPOINT [ "tail", "-f", "/dev/null" ]
+ENTRYPOINT ["mvn", "install"]
