@@ -3,7 +3,7 @@ FROM markhobson/maven-firefox
 
 #WORKDIR /tests
 #COPY ../pom.xml .
-RUN mvn install
+#RUN mvn install
 #COPY .. .
 ENTRYPOINT [ "tail", "-f", "/dev/null" ]
 #ENTRYPOINT ["mvn", "test"]
