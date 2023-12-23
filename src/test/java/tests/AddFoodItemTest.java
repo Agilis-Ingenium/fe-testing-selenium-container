@@ -46,7 +46,7 @@ public class AddFoodItemTest {
   }
   @Test
   public void addFoodItem() {
-    driver.get("http://172.17.0.1:5173");
+    driver.get("http://172.17.0.1:3000");
     driver.findElement(By.cssSelector("a:nth-child(4) .ml-3")).click();
     driver.findElement(By.cssSelector(".bg-green-600")).click();
     driver.findElement(By.id("name")).click();
