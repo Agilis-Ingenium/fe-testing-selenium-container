@@ -6,4 +6,4 @@ COPY ../pom.xml .
 #RUN mvn install
 #COPY .. .
 #ENTRYPOINT [ "tail", "-f", "/dev/null" ]
-ENTRYPOINT ["mvn", "install"]
+ENTRYPOINT ["mvn", "clean", "install"]
