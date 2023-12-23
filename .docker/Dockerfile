@@ -1,9 +1,9 @@
 #FROM maven:3.6-jdk-11
 FROM markhobson/maven-firefox
 
-WORKDIR /tests
-COPY ../pom.xml .
-#RUN mvn install
+#WORKDIR /tests
+#COPY ../pom.xml .
+RUN mvn install
 #COPY .. .
-#ENTRYPOINT [ "tail", "-f", "/dev/null" ]
-ENTRYPOINT ["mvn", "clean", "install"]
+ENTRYPOINT [ "tail", "-f", "/dev/null" ]
+#ENTRYPOINT ["mvn", "test"]
